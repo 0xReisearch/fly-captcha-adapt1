@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/nicodunks/fruitless",
+  "revision": "0943b2c00b47a97c8e22438b11192b33d6779f56",
+  "neurons": 166700,
+  "positioned_neurons": 139659,
+  "mapping": "MaleCNS body ID join; no positional/index equivalence assumed",
+  "window_ms": 60,
+  "all_cached_features_and_spike_hashes_match": true
+}

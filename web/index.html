@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>I am not a robot. I am a fly.</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+  <script type="module" src="/static/surface.js"></script>
+  <script src="/icons.js" defer></script><script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="top"><a class="brand" href="/">REI <span>LABS</span></a><div class="experiment">EXPERIMENT 001 <span>/</span> HUMAN VERIFICATION</div><button id="sound" class="icon-button" aria-label="Enable sound" title="Enable sound"><i data-lucide="volume-x"></i></button></header>
+  <main>
+    <section class="intro"><div class="eyebrow"><span class="status-dot"></span> ADAPT-1 &times; FLY CONNECTOME</div><h1>I am not a robot.<br><span>I am a fly.</span></h1><p>166,700 neurons. Six legs. One identity crisis.</p></section>
+    <div id="learner-controls" class="learner-controls" aria-label="Recording and your hosted learner"></div>
+    <section class="anatomy-stage" aria-label="Fruitless anatomical fly and measured CAPTCHA neural activity">
+      <canvas id="anatomy" aria-label="Interactive NeuroMechFly and MaleCNS anatomical activity"></canvas>
+      <div id="scene-interaction" aria-label="Orbit the CAPTCHA floor" title="Drag to orbit; scroll to zoom"></div>
+      <div class="anatomy-heading"><span>HUMAN VERIFICATION <b>NEUROMECHFLY / ADAPT-1</b></span><span>THE CONNECTOME <b id="neural-window">AWAITING OBSERVATION</b></span></div>
+      <div class="anatomy-caption"><a href="https://github.com/nicodunks/fruitless" target="_blank" rel="noreferrer">Fruitless original meshes &amp; renderer</a><span id="anatomy-status">Loading anatomy...</span></div>
+    </section>
+    <div class="scene-controls"><div id="scene-commands"><button id="camera-home" class="icon-button" title="Reset camera" aria-label="Reset camera"><i data-lucide="focus"></i></button></div><div id="scene-transport"></div><div id="run-status"></div></div>
+    <div class="lab">
+      <section class="subject">
+        <div class="section-label">THE APPLICANT <span>NO. 0001</span></div>
+        <div class="identity"><div class="avatar"><canvas id="portrait" width="260" height="230" aria-label="Animated fly applicant"></canvas><span class="badge">F. FLY</span></div><div class="speech" id="speech">I have never been more human.</div></div>
+        <dl class="passport"><div><dt>Species</dt><dd>Fruit fly</dd></div><div><dt>Occupation</dt><dd>Pending verification</dd></div><div><dt>Desired salary</dt><dd>One banana</dd></div></dl>
+        <div class="stamp" id="stamp">IDENTITY UNCONFIRMED</div>
+        <div class="feed-label">NEURAL ACTIVITY <span id="spikes">AWAITING IMAGE</span></div><canvas id="activity" height="74" aria-label="Measured neural activity over trials"></canvas>
+        <div class="source">MaleCNS v1.0 <span>&middot;</span> Adapt-1 readout</div>
+      </section>
+
+      <section class="challenge-area">
+        <div class="challenge-top"><span id="mode-label"><span class="status-dot"></span> RECORDED EXPERIMENT</span><span id="board-count">ROUND 01</span></div>
+        <div class="captcha" id="captcha">
+          <div class="prompt"><div>Select all images with</div><h2>bananas</h2><small id="prompt-sub">Your species is not a valid form of identification.</small></div>
+          <div id="tiles" class="tiles" aria-label="Nine fruit image tiles"></div>
+          <div class="captcha-bottom"><div class="captcha-tools"><button class="icon-button" id="restart" title="Replay from the beginning" aria-label="Replay from the beginning"><i data-lucide="rotate-ccw"></i></button><button class="icon-button" id="info" title="Experiment details" aria-label="Experiment details"><i data-lucide="info"></i></button><span id="inspection">READY TO INSPECT</span></div><button id="verify" class="verify" disabled>VERIFY</button></div>
+          <div id="verdict" class="verdict" hidden><div class="verdict-icon"><i data-lucide="check"></i></div><strong id="verdict-title">Human enough.</strong><span id="verdict-detail">Apparently this is all it takes.</span></div>
+          <div id="start-overlay" class="start-overlay"><div class="mini-checkbox"><i data-lucide="bug"></i></div><strong>Let the fly try.</strong><button class="primary" id="begin" disabled><i data-lucide="play"></i> Begin identity crisis</button><small>Recorded choices. Actual neural responses.</small></div>
+        </div>
+        <div class="transport"><button id="pause" class="icon-button" title="Pause playback" aria-label="Pause playback"><i data-lucide="pause"></i></button><div class="timeline"><div id="timeline-fill"></div></div><select id="speed" aria-label="Playback speed" title="Playback speed"><option value="1">1&times;</option><option value="3" selected>3&times;</option><option value="8">8&times;</option></select><span class="phase" id="phase">FIRST IMPRESSIONS</span></div>
+      </section>
+
+      <aside class="observatory">
+        <div class="section-label">THE EVIDENCE <span>NOT VIBES</span></div>
+        <div class="score-line"><span>Tile choices correct</span><strong id="accuracy">--<em>%</em></strong></div>
+        <div class="mini-chart"><canvas id="learning" height="130" aria-label="Measured accuracy during playback"></canvas><div><span>FIRST CHOICE</span><span>NOW</span></div></div>
+        <div class="stats"><div><span>Feedback received</span><strong id="feedback">0</strong></div><div><span>CAPTCHAs passed</span><strong id="passes">0 / 0</strong></div></div>
+        <div class="phase-card"><span class="eyebrow" id="stage-label">EMPTY TASK MEMORY</span><p id="stage-copy">Great confidence.<br>Absolutely no qualifications.</p></div>
+        <button class="fresh" id="fresh"><i data-lucide="key-round"></i> Use my API key</button>
+        <button class="fresh" id="stop-run" hidden><i data-lucide="square"></i> Stop learning</button>
+        <span id="live-progress" role="status"></span>
+        <a class="text-link" id="download-results" href="/api/evidence" download>Download results <i data-lucide="download"></i></a>
+        <a class="text-link" id="download-audit" hidden download>Download API audit <i data-lucide="download"></i></a>
+      </aside>
+    </div>
+    <section class="result-band"><div><span>BEFORE FEEDBACK</span><strong id="before-result">--</strong></div><div><span>UNSEEN IMAGES, AFTER LEARNING</span><strong class="green" id="after-result">--</strong></div><div><span>SHUFFLED NEURAL INPUT</span><strong id="shuffle-result">--</strong></div><div class="result-note" id="reference-note">Recorded reference run.<br>360 feedbacks &middot; 180 test images.</div></section>
+  </main>
+  <footer><span>A very unofficial human. A very real experiment.</span><div><a href="/api/method" target="_blank">Method &amp; credits</a><a id="download-trace" href="/api/trace" download>Decision trace <i data-lucide="arrow-down-to-line"></i></a><span>ORIGINAL PARODY &middot; NOT A REAL CAPTCHA</span></div></footer>
+  <dialog id="details"><button class="icon-button close" aria-label="Close details"><i data-lucide="x"></i></button><span class="eyebrow">WHAT YOU ARE WATCHING</span><h2>The fly brought a learning layer.</h2><p>Real fruit photos stimulate a fixed, full-connectome spiking model based on the MaleCNS fly wiring map. Adapt-1 receives 64 pooled neural responses and learns whether to select or leave a tile.</p><p>The game returns correct/incorrect feedback on training tiles only. The final test uses different photos, with no feedback. The pictured walking is an animation of those decisions, not a simulation of biological locomotion.</p><p>The recording uses cached neural responses with Adapt-1 selecting tiles. In live mode, fly-side readouts select tiles and Adapt-1 manages additional inspections. Start a fresh learner with your own Neuroadapt key.</p><p>Photo split: unseen images, not a claim of unseen physical fruit specimens. This is an original parody game, not a test against commercial CAPTCHA security.</p><a href="/api/method" target="_blank" class="text-link">Full method and attribution <i data-lucide="arrow-up-right"></i></a></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <dialog id="key-dialog">
+    <button id="key-close" class="icon-button" title="Close" aria-label="Close"><i data-lucide="x"></i></button>
+    <h2>A fresh start.</h2>
+    <label for="api-key">Your Neuroadapt API key</label>
+    <input id="api-key" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="256" placeholder="API key" />
+    <p>Your key is sent over HTTPS to this demo server and held in memory during the run. It is not saved or logged. Learning requests use your Neuroadapt quota.</p>
+    <p>360 training choices, then 180 held-out images. A new Domain is created in your account. Closing this tab does not stop the run; use Stop learner. The recording needs no key.</p>
+    <button id="key-start" class="primary"><i data-lucide="play"></i> Start learning</button>
+    <a class="text-link" href="https://docs.reilabs.org/docs/neuroadapt/quickstart" target="_blank" rel="noreferrer">Neuroadapt API access</a>
+  </dialog>
+</body></html>

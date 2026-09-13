@@ -1,0 +1,37 @@
+{
+  "seed": 660068,
+  "metrics": {
+    "before": {
+      "tiles": 18,
+      "correct": 13,
+      "accuracy": 0.7222222222222222,
+      "boards": 2,
+      "passed_boards": 0,
+      "abstentions": 0
+    },
+    "training": {
+      "tiles": 360,
+      "correct": 352,
+      "accuracy": 0.9777777777777777,
+      "boards": 40,
+      "passed_boards": 36,
+      "abstentions": 0
+    },
+    "after": {
+      "tiles": 180,
+      "correct": 174,
+      "accuracy": 0.9666666666666667,
+      "boards": 20,
+      "passed_boards": 16,
+      "abstentions": 0
+    }
+  },
+  "feedback_admitted": 360,
+  "test_feedback": 0,
+  "train_test_exact_overlap": 0,
+  "public_policy_state_unchanged": true,
+  "protocol": "18 baseline decisions, 360 training choices, 180 held-out image decisions; feedback during training only.",
+  "neural_input": "64 fixed simulated fly features; no image labels, pixels, target or tile ID in query context",
+  "initial_sample_count": 0,
+  "final_sample_count": 360
+}

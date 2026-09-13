@@ -1,0 +1,260 @@
+[
+  {
+    "seed": 17,
+    "metrics": {
+      "before": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "training": {
+        "tiles": 360,
+        "correct": 303,
+        "accuracy": 0.8416666666666667,
+        "inspections": 320,
+        "boards": 40,
+        "passed_boards": 16
+      },
+      "after": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 16
+      },
+      "frozen_fly": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "erased_neural_input": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "wide_only": {
+        "tiles": 180,
+        "correct": 91,
+        "accuracy": 0.5055555555555555,
+        "inspections": 0,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "fixed_inspection": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 16
+      },
+      "frozen_attention": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 16
+      }
+    },
+    "fly_feedbacks": 360,
+    "attention_feedbacks": 320,
+    "controller_feedbacks": 360,
+    "initial_fly_sha256": "71a39808a0307ee23e1aa26090dd1f2dfdfa9d97f0ce3dcd7b28564a8bdd9130",
+    "frozen_fly_sha256": "c4977dc0d928b976b9dffaa0edb57b1f910eb2e0dcfc6ca8bfe6332bce126140",
+    "heldout_fly_sha256": "c4977dc0d928b976b9dffaa0edb57b1f910eb2e0dcfc6ca8bfe6332bce126140",
+    "heldout_controller_sha256": "072ddac76b8bea9b8ba02dad8cfa89cda37faaf006744fafdfa2842fd71bb23c",
+    "graph_fixed": true,
+    "test_feedback": 0,
+    "exact_split_overlap": 0,
+    "live_simulations": 3020,
+    "overview_pixels": 2,
+    "simulation_seconds": 136.47705614287406,
+    "elapsed_seconds": 244.8741445490159,
+    "process_peak_rss_mb": 1849.171875,
+    "protocol": "Fixed biological graph, artificial reward-plastic readouts; one pass training; distinct frozen test images.",
+    "controller": "local Adapt-1 inspection budget"
+  },
+  {
+    "seed": 29,
+    "metrics": {
+      "before": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "training": {
+        "tiles": 360,
+        "correct": 309,
+        "accuracy": 0.8583333333333333,
+        "inspections": 358,
+        "boards": 40,
+        "passed_boards": 13
+      },
+      "after": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 15
+      },
+      "frozen_fly": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "erased_neural_input": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "wide_only": {
+        "tiles": 180,
+        "correct": 91,
+        "accuracy": 0.5055555555555555,
+        "inspections": 0,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "fixed_inspection": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 15
+      },
+      "frozen_attention": {
+        "tiles": 180,
+        "correct": 175,
+        "accuracy": 0.9722222222222222,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 15
+      }
+    },
+    "fly_feedbacks": 360,
+    "attention_feedbacks": 358,
+    "controller_feedbacks": 360,
+    "initial_fly_sha256": "c2d62753c1b280c98d368c9254afc1885fa458ad9c89b802f3d7aac46d939cf6",
+    "frozen_fly_sha256": "226ad50df3dbcbd47d83971fbbeb4e69a002862e01d25afe2836b04ec3b28142",
+    "heldout_fly_sha256": "226ad50df3dbcbd47d83971fbbeb4e69a002862e01d25afe2836b04ec3b28142",
+    "heldout_controller_sha256": "ac4ea896f17da44fd3af1cbd7b567533d4c7bdf27963e21b129f61fabef3d015",
+    "graph_fixed": true,
+    "test_feedback": 0,
+    "exact_split_overlap": 0,
+    "live_simulations": 3058,
+    "overview_pixels": 2,
+    "simulation_seconds": 139.12049682671204,
+    "elapsed_seconds": 230.9912723908201,
+    "process_peak_rss_mb": 1863.4375,
+    "protocol": "Fixed biological graph, artificial reward-plastic readouts; one pass training; distinct frozen test images.",
+    "controller": "local Adapt-1 inspection budget"
+  },
+  {
+    "seed": 43,
+    "metrics": {
+      "before": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "training": {
+        "tiles": 360,
+        "correct": 267,
+        "accuracy": 0.7416666666666667,
+        "inspections": 247,
+        "boards": 40,
+        "passed_boards": 9
+      },
+      "after": {
+        "tiles": 180,
+        "correct": 180,
+        "accuracy": 1.0,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 20
+      },
+      "frozen_fly": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "erased_neural_input": {
+        "tiles": 180,
+        "correct": 90,
+        "accuracy": 0.5,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "wide_only": {
+        "tiles": 180,
+        "correct": 91,
+        "accuracy": 0.5055555555555555,
+        "inspections": 0,
+        "boards": 20,
+        "passed_boards": 0
+      },
+      "fixed_inspection": {
+        "tiles": 180,
+        "correct": 180,
+        "accuracy": 1.0,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 20
+      },
+      "frozen_attention": {
+        "tiles": 180,
+        "correct": 180,
+        "accuracy": 1.0,
+        "inspections": 180,
+        "boards": 20,
+        "passed_boards": 20
+      }
+    },
+    "fly_feedbacks": 360,
+    "attention_feedbacks": 247,
+    "controller_feedbacks": 360,
+    "initial_fly_sha256": "9bb81ca793eb93dcd9e4777a0a9ccc37d27887ff1045bf852ea89218359471ea",
+    "frozen_fly_sha256": "b27fac7756b0c388374f31c55704deb4691fac64b3d734ea192602a7305f873e",
+    "heldout_fly_sha256": "b27fac7756b0c388374f31c55704deb4691fac64b3d734ea192602a7305f873e",
+    "heldout_controller_sha256": "40674de899518fd5412aceb96fa716d18b58c15d24bf4026601a443e3f95b85c",
+    "graph_fixed": true,
+    "test_feedback": 0,
+    "exact_split_overlap": 0,
+    "live_simulations": 2947,
+    "overview_pixels": 2,
+    "simulation_seconds": 125.6144440905191,
+    "elapsed_seconds": 233.44625600706786,
+    "process_peak_rss_mb": 1863.4375,
+    "protocol": "Fixed biological graph, artificial reward-plastic readouts; one pass training; distinct frozen test images.",
+    "controller": "local Adapt-1 inspection budget"
+  }
+]

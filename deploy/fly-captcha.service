@@ -1,0 +1,38 @@
+[Unit]
+Description=Fly CAPTCHA hosted Adapt-1 demo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=flydemo
+Group=flydemo
+WorkingDirectory=/opt/fly-captcha
+Environment=PUBLIC_ORIGIN=https://fly.reilabs.org
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=NUMBA_CACHE_DIR=/run/fly-captcha/numba
+Environment=TMPDIR=/run/fly-captcha
+RuntimeDirectory=fly-captcha
+RuntimeDirectoryMode=0700
+ExecStart=/opt/fly-captcha/.venv/bin/uvicorn live_app:app --host 127.0.0.1 --port 8793 --workers 1 --no-access-log --no-proxy-headers --limit-concurrency 64
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=200
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LimitCORE=0
+MemoryMax=8G
+TasksMax=128
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

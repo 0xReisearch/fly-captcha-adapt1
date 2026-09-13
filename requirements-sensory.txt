@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+pandas>=2.2,<3
+pyarrow>=18,<24
+Pillow>=11,<13
+numba>=0.61,<0.66
+scipy>=1.14,<2
+pyyaml>=6,<7
+requests>=2.32,<3

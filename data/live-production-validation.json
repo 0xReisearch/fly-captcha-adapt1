@@ -1,0 +1,60 @@
+{
+  "seed": 983461,
+  "metrics": {
+    "before": {
+      "tiles": 180,
+      "correct": 90,
+      "accuracy": 0.5,
+      "inspections": 180,
+      "boards": 20,
+      "passed_boards": 0
+    },
+    "training": {
+      "tiles": 360,
+      "correct": 298,
+      "accuracy": 0.8277777777777777,
+      "inspections": 308,
+      "boards": 40,
+      "passed_boards": 12
+    },
+    "after": {
+      "tiles": 180,
+      "correct": 173,
+      "accuracy": 0.9611111111111111,
+      "inspections": 180,
+      "boards": 20,
+      "passed_boards": 16
+    }
+  },
+  "fly_feedbacks": 360,
+  "configuration": {
+    "seed": 983461,
+    "overview_size": 2,
+    "attention_forgetting": 0.98,
+    "attention_epsilon": 0.3,
+    "run_controls": false,
+    "readout": "recursive_least_squares",
+    "hidden_units_per_readout": 128,
+    "reward": "chosen_action_binary_correctness",
+    "inspection_cost": 0.02,
+    "dataset_manifest_sha256": "08a78cf297d8f806f8b33607a45614acf43823a5d6682ca61e8e1136468a107c",
+    "graph_weight_sha256": "d95171c2d59cfe3ebef2e5bd52be779b8f74754d718fc8941a93b8f2921c632b"
+  },
+  "attention_feedbacks": 308,
+  "controller_feedbacks": 360,
+  "initial_fly_sha256": "f714b993935b1f0f21fd9117c29357cd382fd6c237f912b75f27fc7c3b963ad7",
+  "frozen_fly_sha256": "1e9c929cb16b60b1062c4e1b984d3fd79a5e93fd8fac4bb12d0f01974ff11388",
+  "heldout_fly_sha256": "1e9c929cb16b60b1062c4e1b984d3fd79a5e93fd8fac4bb12d0f01974ff11388",
+  "heldout_controller_sha256": "e9e9d3bba29afb4b9d45f9b1659e799fce74b329aed4b66cb3499c828395c6d7",
+  "graph_fixed": true,
+  "test_feedback": 0,
+  "exact_split_overlap": 0,
+  "live_simulations": 1388,
+  "overview_pixels": 2,
+  "simulation_seconds": 132.2800509029712,
+  "elapsed_seconds": 584.9657623139992,
+  "process_peak_rss_mb": 776.1875,
+  "protocol": "Fixed biological graph, artificial reward-plastic readouts; one pass training; distinct frozen test images.",
+  "controller": "production Adapt-1 inspection budget",
+  "controller_verification": "public sample count, learner version and model metadata; not private weight inspection"
+}

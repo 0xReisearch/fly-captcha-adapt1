@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Definitely human | Rei Labs</title><link rel="stylesheet" href="/static/style.css">
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<script src="/icons.js" defer></script><script type="module" src="/static/lab.js"></script></head>
+<body><header><a href="/">REI LABS <span>/ FLY NEURAL LAB</span></a><span class="tag" id="deployment">LOCAL EXPERIMENT</span></header>
+<main><div class="toolbar"><h1>Definitely human.</h1><div class="commands">
+<button id="start"><i data-lucide="play"></i> Start fresh</button><button id="stop" disabled><i data-lucide="square"></i> Stop learning</button>
+<button id="home" class="icon" title="Reset camera" aria-label="Reset camera"><i data-lucide="focus"></i></button>
+<button id="forget" class="icon" title="Forget this browser session and release its key" aria-label="Forget session" hidden><i data-lucide="log-out"></i></button>
+</div></div><div class="status"><span id="status">Ready</span><span id="window">Awaiting observation</span></div>
+<section class="personality"><div class="testimony"><span>APPLICANT STATEMENT</span><p id="thought" aria-live="polite">I have a perfectly normal number of legs.</p></div><div class="salary"><i data-lucide="banana"></i><strong id="salary">0</strong><span>banana salary<br>one per perfect board</span></div></section>
+<section class="scene"><canvas id="scene" aria-label="Anatomical fly on fruit tiles and live simulated neural activity"></canvas>
+<div class="scene-label"><span>THE APPLICANT</span><span>LIVE NEURAL ACTIVITY</span></div>
+<div id="verdict" class="verdict" hidden></div></section>
+<section class="playground"><div><h2 id="round-title">Human verification pending</h2><p id="round-note">Application fee: zero. Expected salary: bananas.</p></div><div class="commands">
+<button id="next" disabled><i data-lucide="shuffle"></i> Another CAPTCHA</button>
+<button id="race" hidden><i data-lucide="flag"></i> <span id="race-label">Lock my picks (0)</span></button>
+<button id="watch" hidden><i data-lucide="eye"></i> Fly goes solo</button></div></section>
+<div id="practice-note" hidden>Practice / frozen learners / reshuffled test photos / excluded from evaluation</div>
+<details class="diagnostics"><summary>Inside the applicant's head</summary>
+<section class="metrics"><div><span>Fly choice</span><strong id="choice">--</strong></div><div><span>Fly inspection</span><strong id="gaze">--</strong></div><div><span>Adapt-1 budget</span><strong id="budget">--</strong></div><div><span>Outcome</span><strong id="reward">--</strong></div><div><span>Feedbacks</span><strong id="feedback">0</strong></div></section>
+<section class="readout"><div><span>Retinal contrast</span><img id="retina" width="100" height="100" alt="Current contrast input to the neural simulator" hidden></div><div><span>Decision readout</span><strong id="scores">leave -- / select --</strong></div><div><span>Reward prediction error</span><strong id="error">--</strong></div><div><span>First view</span><strong id="resolution">2 x 2 overview</strong></div></section>
+<section class="learning"><h2>Choices over time</h2><canvas id="curve" aria-label="Measured rolling accuracy by experiment phase"></canvas><div id="results"></div></section></details>
+<footer><span>Fixed connectome + experimental reward-plastic readout. Body motion is illustrative.</span><div class="footer-links"><a id="recording" href="/recording" hidden>Watch recording</a><a href="/api/results" target="_blank">Results</a><a id="download" href="/api/download/trace.jsonl" hidden>Decision trace</a><a id="audit" href="/api/download/core-api-trace.jsonl" hidden>API audit</a></div></footer></main>
+<dialog id="key-dialog"><button id="key-close" class="icon" title="Close" aria-label="Close"><i data-lucide="x"></i></button><h2>Your key. Your fly.</h2><label for="api-key">Neuroadapt API key</label><input id="api-key" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="256" placeholder="API key">
+<p>Your key is sent over HTTPS to this server, kept in memory for your session, and never saved or logged. The fly simulation runs on this CPU server. Inspection decisions and feedback use your Neuroadapt account and quota.</p>
+<p>A fresh run makes 360 training choices and evaluates 180 held-out photos. Runtime depends on API latency. Stop ends the active round; Forget session releases your key and local learner. Sessions expire after two hours. Your hosted Domain remains in your account.</p>
+<button id="key-start"><i data-lucide="play"></i> Start my learner</button><a href="https://docs.reilabs.org/docs/neuroadapt/overview" target="_blank" rel="noreferrer">API documentation</a></dialog>
+</body></html>
